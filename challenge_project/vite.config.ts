@@ -22,4 +22,13 @@ export default defineConfig({
             'ziggy-js': resolve(__dirname, 'vendor/tightenco/ziggy'),
         },
     },
+    build:{
+        rollupOptions:{
+            input:{
+                main:"resources/js/app.tsx",
+                home:"resources/js/Application/LandingPage/Home.tsx",
+                dashboard:"resources/js/Application/Dashboard/Dashboard.tsx"
+            }
+        }
+    }
 });
